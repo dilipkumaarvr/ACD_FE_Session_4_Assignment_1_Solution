@@ -1,0 +1,33 @@
+
+<!DOCTYPE html>
+<html>
+	
+	<head>
+		<title></title>
+
+		<script type="text/javascript">
+
+			var person = function(){
+			    this.walks = true;
+			}
+
+			var student = function(){
+				this.studies = "yes";
+			};
+
+			var s = new student();
+			s.__proto__ = new person();
+			alert("inherited property walks : "+  s.walks);
+
+
+		</script>
+
+	</head>
+
+	<body>
+
+		Refer to code
+
+	</body>
+
+</html>
